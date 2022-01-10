@@ -8,11 +8,20 @@
 
 // ---- 문제
 function solution(a, b, c) {
-  let arr = [a, b, c]
-  arr.sort((a, b) => a - b)
-  if(arr[0] + arr[1] < arr[2]) {
-    return "NO"
-  }else {
-    return "YES"
+  let arr = [a, b, c];
+  arr.sort((a, b) => a - b);
+  if (arr[0] + arr[1] < arr[2]) {
+    return "NO";
+  } else {
+    return "YES";
   }
+  //정렬 없이
+  // let result = "YES", max;
+  // let sum = a + b + c;
+  // if (a > b) max = a;
+  // else max = b;
+  // if (c > max) max = c;
+  // if (sum - max <= max) result = "NO";
+
+  // return result;
 }
