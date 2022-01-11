@@ -9,10 +9,10 @@
 // ---- 풀이
 
 function solution(arr) {
-  // 1
-  return Math.min(arr);
+  // 1. 내장 함수
+  return Math.min(...arr);
 
-  // 2
+  // 2. for문
   // min은 가장 큰 수를 임의로 저장해놓는 메소드
   // let answer,
   //   min = Number.MAX_SAFE_INTEGER;
