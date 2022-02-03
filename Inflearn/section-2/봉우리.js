@@ -11,10 +11,17 @@ function solution(arr) {
   let dy = [0, 1, 0, -1];
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
+      let flag = 0;
       for (let k = 0; k < 4; k++) {
         let nx = i + dx[k];
         let ny = j + dy[k];
-        if (nx >= 0 && nx < n && ny >= 0 && my < n && arr[nx][ny] >= arr[i][j]) {
+        if (
+          nx >= 0 &&
+          nx < n &&
+          ny >= 0 &&
+          my < n &&
+          arr[nx][ny] >= arr[i][j]
+        ) {
           flag = 0;
           break;
         }
